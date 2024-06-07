@@ -14,55 +14,27 @@ body {
     border-radius: 5px;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-.timebox {
-    margin-bottom: 15px;
-}
-
-.timebox label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.timebox input, .timebox textarea {
+table {
     width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    border: 1px solid #000;
+    text-align: center;
     padding: 8px;
-    box-sizing: border-box;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+tbody td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 8px;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-#timebox-list {
-    margin-top: 20px;
-}
-
-#timebox-items {
-    list-style: none;
-    padding: 0;
-}
-
-#timebox-items li {
-    background: #e7e7e7;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+td[contenteditable="true"] {
+    background-color: #e7e7e7;
 }
