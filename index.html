@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timebox Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timebox Template</h1>
+        <form id="timebox-form">
+            <div class="timebox">
+                <label for="task">Task:</label>
+                <input type="text" id="task" name="task" placeholder="Enter task" required>
+            </div>
+            <div class="timebox">
+                <label for="start-time">Start Time:</label>
+                <input type="time" id="start-time" name="start-time" required>
+            </div>
+            <div class="timebox">
+                <label for="end-time">End Time:</label>
+                <input type="time" id="end-time" name="end-time" required>
+            </div>
+            <div class="timebox">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Enter description"></textarea>
+            </div>
+            <button type="submit">Add Timebox</button>
+        </form>
+        <div id="timebox-list">
+            <h2>Your Timeboxes</h2>
+            <ul id="timebox-items"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
